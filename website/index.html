@@ -11,14 +11,24 @@
   <div class ="holder headline">
     Weather Journal App
   </div>
-  <div class ="holder zip">
-    <label for="zip">Enter Zipcode here</label>
-    <input type="text" id="zip" placeholder="enter zip code here">
+<div>
+    <div class="holder zip">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon-search search-icon" width="16" height="16" viewBox="0 0 16 16"><path d="M15.784 13.68l-4.096-4.096c.585-.955.94-2.067.94-3.27a6.315 6.315 0 1 0-6.314 6.314 6.253 6.253 0 0 0 3.27-.937l4.096 4.094a.751.751 0 0 0 1.052 0l1.052-1.052a.75.75 0 0 0 0-1.053zm-9.47-3.157a4.21 4.21 0 1 1 0-8.419 4.21 4.21 0 0 1 0 8.42z"></path></svg>
+
+   <form class="search-form" action="/en/search-locations" method="GET">
+      <input name="query" class="search-input" type="text" id="zip" placeholder="  Search location, zip..." autocomplete="off">
+    </form>
+    <vc:icon-close class-name="clear-icon">
+  </vc:icon-close></div>
+
+    <div class="buttonn"><button id="generate" type = "submit"> Generate </button> </div>
+
   </div>
+  
   <div class ="holderfeel">
     <label for="feelings">How are you feeling today?</label>
     <textarea class= "myInput" id="feelings" placeholder="Enter your feelings here" rows="9" cols="50"></textarea>
-    <button id="generate" type = "submit"> Generate </button>
+    
   </div>
   <div class ="holderentry">
    <div class = "title"></div>
